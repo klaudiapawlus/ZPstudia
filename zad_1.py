@@ -1,5 +1,14 @@
-def zad1(name: str, surname: str) -> str:
-    return("Cześć " + name + " " + surname + "!")
+class Student:
+    def __init__(self, name: str, marks: int):
+        self._name = name
+        self._marks = marks
+
+    def is_passed(self) -> bool:
+        if (self._marks > 50):
+            return True
+        else:
+            return False
 
 
-print(zad1("Klaudia", "Pawlus"))
+stud = Student("Jacek", 70)
+print(stud.is_passed())
