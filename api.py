@@ -1,4 +1,4 @@
-PIfrom flask import Flask
+from flask import Flask
 from flask_restful import Resource, Api
 import csv
 from klasy import Filmy
