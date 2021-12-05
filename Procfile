@@ -1,1 +1,1 @@
-web: gunicorn zad_1:app
+web: gunicorn api:app
