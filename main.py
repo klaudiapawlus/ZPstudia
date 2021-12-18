@@ -27,11 +27,11 @@ kubek = cv2.imread('kubek.jpg')
 angcytat = cv2.imread('5s.jpg')
 img1 = cv2.imread('ang.png')
 img2 = cv2.imread('2.jpg')
-#
-# print(czytanie(img)) #dziala
-# print(czytanie(kubek)) #prawie działa
-# print(czytanie(angcytat)) #dziala
+
+print(czytanie(img)) #dziala
+print(czytanie(kubek)) #prawie działa
+print(czytanie(angcytat)) #dziala
 img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 img2c= cv2.threshold(cv2.GaussianBlur(img2, (5, 5), 0), 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
 print(czytanie(img2))
-# print(czytanie(img1)) #dziala
+print(czytanie(img1)) #dziala
